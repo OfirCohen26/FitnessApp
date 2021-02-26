@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0E0E0E"
+    tools:context=".Plan_Description">
+
+    <ImageView
+        android:id="@+id/plan_description_IMG_backToPlans"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_margin="20dp"
+        android:src="@drawable/left_arrow"
+        app:tint="@color/blue" />
+
+    <ImageView
+        android:id="@+id/plan_description_IMG_addOrRemovePlanToMyPlans"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="20dp"
+        app:tint="@color/blue" />
+
+    <LinearLayout
+        android:id="@+id/plan_description_LAY_chosen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/plan_description_IMG_backToPlans"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/plan_description_LBL_chosenPlan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/rubik_bold"
+            android:text="Plan"
+            android:textColor="@color/white"
+            android:textSize="50dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/plan_description_LBL_chosenPlanSign"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/rubik_bold"
+            android:text=" A"
+            android:textColor="@color/white"
+            android:textSize="50dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/plan_description_LBL_chosenPlanDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/plan_description_LAY_chosen"
+        android:layout_margin="10dp"
+        android:background="#FA2D2D2E"
+        android:fontFamily="@font/rubik_bold"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/plan_description_LBL_chosenPlanTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/plan_description_LBL_chosenPlanDescription"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:fontFamily="@font/rubik_bold"
+        android:text="3:30 minutes"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/plan_description_BTN_start"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/plan_description_LBL_chosenPlanTime"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/rubik_bold"
+        android:textColor="@color/blue"
+        app:cornerRadius="150dp"
+        app:icon="@drawable/right_arrow"
+        app:iconGravity="textEnd"
+        app:iconTint="@color/blue"
+        app:strokeColor="@color/blue" />
+
+
+</RelativeLayout>

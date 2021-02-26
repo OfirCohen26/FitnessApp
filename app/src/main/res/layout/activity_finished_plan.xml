@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0E0E0E"
+    tools:context=".Finished_Plan">
+
+    <TextView
+        android:id="@+id/finished_plan_LBL_finished_Well_done"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/finished_plan_IMG_globet"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp"
+        android:fontFamily="@font/rubik_bold"
+        android:text="Well Done!!"
+        android:textColor="@color/white"
+        android:textSize="50dp" />
+
+    <ImageView
+        android:id="@+id/finished_plan_IMG_globet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/goblet" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/finished_plan_BTN_back_to_PlanDes"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/finished_plan_IMG_globet"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/rubik_bold"
+        android:text="continue exercising "
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        app:backgroundTint="@color/blue"
+        app:cornerRadius="100dp"
+        app:icon="@drawable/right_arrow"
+        app:iconGravity="textEnd"
+        app:iconTint="@color/white"
+        app:strokeColor="@color/blue" />
+
+</RelativeLayout>

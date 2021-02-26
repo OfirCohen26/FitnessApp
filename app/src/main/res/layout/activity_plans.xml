@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0E0E0E"
+    tools:context=".Plans">
+
+    <ImageView
+        android:id="@+id/plans_IMG_userProfile"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_margin="20dp"
+        android:src="@drawable/user__2_"
+        app:tint="#1385DF" />
+
+    <TextView
+        android:id="@+id/plans_LBL_plans"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/plans_IMG_userProfile"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp"
+        android:fontFamily="@font/rubik_bold"
+        android:text="@string/plans"
+        android:textColor="@color/white"
+        android:textSize="50dp"
+        android:textStyle="bold" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/plans_BTN_planA"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/plans_LBL_plans"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="#FA2D2D2E"
+        android:fontFamily="@font/rubik_bold"
+        android:text="@string/plan_a"
+        android:textColor="#1385DF"
+        android:textSize="40sp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/plans_BTN_planB"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/plans_BTN_planA"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="15dp"
+        android:backgroundTint="#FA2D2D2E"
+        android:fontFamily="@font/rubik_bold"
+        android:text="@string/plan_b"
+        android:textColor="#1385DF"
+        android:textSize="40sp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/plans_BTN_planC"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/plans_BTN_planB"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="#FA2D2D2E"
+        android:fontFamily="@font/rubik_bold"
+        android:text="@string/plan_c"
+        android:textColor="#1385DF"
+        android:textSize="40sp" />
+
+</RelativeLayout>

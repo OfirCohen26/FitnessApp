@@ -22,7 +22,7 @@ import com.google.android.material.button.MaterialButton;
 
 import java.util.Arrays;
 
-public class Show_Step extends Activity_Base implements Variables {
+public class Show_Step extends AppCompatActivity implements Variables {
     // Layouts
     private RelativeLayout show_step_LAY_timer_for_break;
     private LinearLayout show_step_LAY_step;
@@ -179,12 +179,12 @@ public class Show_Step extends Activity_Base implements Variables {
     private void initStepsArray() {
         if (planSign.equals(A)) {
             steps = Arrays.copyOf(PLAN_A, PLAN_A.length);
-            secondsForExercise = 3;
-            secondsForRestOrAerobic = 3;
+            secondsForExercise = 3; // 30 sec
+            secondsForRestOrAerobic = 3; // 30 sec
         } else if (planSign.equals(B)) {
             steps = Arrays.copyOf(PLAN_B, PLAN_B.length);
-            secondsForExercise = 3;
-            secondsForRestOrAerobic = 3;
+            secondsForExercise = 3; // 30 sec
+            secondsForRestOrAerobic = 3; // 60 sec
         } else {
             steps = Arrays.copyOf(PLAN_C, PLAN_C.length);
             secondsForExercise = 2;// 20sec

@@ -140,6 +140,7 @@ public class Sign_Up extends Activity_Base {
     private void moveToLoginScreen() {
         Intent intent = new Intent(this, Sign_In.class);
         startActivity(intent);
+        finish();
     }
 
     private void findViews() {

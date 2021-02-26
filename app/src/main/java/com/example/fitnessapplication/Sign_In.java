@@ -23,7 +23,7 @@ import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
 
-public class Sign_In extends Activity_Base {
+public class Sign_In extends AppCompatActivity {
     // Layout
     private RelativeLayout login_LAY_loading;
 
@@ -145,6 +145,7 @@ public class Sign_In extends Activity_Base {
     private void moveToSignUpScreen() {
         Intent intent = new Intent(this, Sign_Up.class);
         startActivity(intent);
+        finish();
     }
 
     private void findViews() {

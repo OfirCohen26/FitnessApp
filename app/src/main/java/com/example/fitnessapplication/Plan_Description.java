@@ -8,6 +8,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.bumptech.glide.Glide;
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -95,8 +96,7 @@ public class Plan_Description extends Activity_Base implements Variables {
         plan_description_IMG_backToPlans.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                finish();
-            }
+                movePlansScreen();            }
         });
         plan_description_BTN_start.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -172,13 +172,13 @@ public class Plan_Description extends Activity_Base implements Variables {
     private void updateUI() {
         plan_description_LBL_chosenPlanSign.setText(planSign);
         description = Arrays.toString(PLAN_A);
-        planTime = "18:00";
+        planTime = "18:00 min";
         if (planSign.equals(B)) {
             description = Arrays.toString(PLAN_B);
-            planTime = "30:00";
+            planTime = "30:00 min";
         } else if (planSign.equals(C)) {
             description = Arrays.toString(PLAN_C);
-            planTime = "20:00";
+            planTime = "20:00 min";
         }
         plan_description_LBL_chosenPlanTime.setText(planTime);
         plan_description_LBL_chosenPlanDescription.setText(description.replace("[", "\n").replace("]", "").replace(", ", "\n"));
@@ -195,6 +195,15 @@ public class Plan_Description extends Activity_Base implements Variables {
         Intent intent = new Intent(this, Show_Step.class);
         intent.putExtra("planSign", planSign);
         startActivity(intent);
+        Log.d("in Plan descriotion", "to show step");
+
+    }
+
+    private void movePlansScreen() {
+        Intent intent = new Intent(this, Plans.class);
+        startActivity(intent);
+        Log.d("in Plan descriotion", "to Plans");
+        finish();
     }
 
     // Get the plan that the user choose

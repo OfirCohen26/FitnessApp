@@ -11,7 +11,7 @@ public interface Variables {
     final String idDocC = "KXTqWtwwSlayweMZYLd7";
 
 
-    final String [] PLAN_A = {"1. Abs - Toe Touches X3","2. Abs - Heel touchers X3","3.Abs - Bicycles X3",
+    final String [] PLAN_A = {"1. Abs - Toe Touches X3","2. Abs - Heel touchers X3","3.  Abs - Bicycles X3",
             "4. Shoulders - Shoulder Press X3","5. Shoulders & Arm & chest - Push-Ups X3"
             ,"6. Abs & Shoulders & Chest & Legs - Walking Plank X3",
             ", REST between each exercise of 30 SEC"};

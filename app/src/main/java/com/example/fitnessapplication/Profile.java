@@ -1,12 +1,15 @@
 package com.example.fitnessapplication;
+
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
@@ -65,6 +68,8 @@ public class Profile extends Activity_Base implements Variables {
         profile_IMG_plans.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+//                backToPlans();
+                Log.d("in Profile", "to Plans");
                 finish();
             }
         });
@@ -98,10 +103,18 @@ public class Profile extends Activity_Base implements Variables {
         });
     }
 
-    private void preparePlan(String planSign){
+    private void preparePlan(String planSign) {
         Intent intent = new Intent(this, Plan_Description.class);
         intent.putExtra("planSign", planSign);
         startActivity(intent);
+        Log.d("in Profile", "to Plan description");
+        finish();
+    }
+
+    private void backToPlans() {
+        Intent intent = new Intent(this, Plans.class);
+        startActivity(intent);
+        Log.d("in Profile", "to Plans");
         finish();
     }
 
@@ -125,31 +138,34 @@ public class Profile extends Activity_Base implements Variables {
     }
 
     // Update User Profile details according currently signed-in user
-    private void updateUI(User user){
+    private void updateUI(User user) {
         profile_LBL_userName.setText(user.getUserName());
         profile_LBL_email.setText(user.getEmail());
         String plans = user.getMy_plans().toString().replace("[", "").replace("]", "").replace(", ", "");
-        if(plans.contains(A))
+        if (plans.contains(A))
             profile_LAY_planA.setVisibility(View.VISIBLE);
         else
             profile_LAY_planA.setVisibility(View.GONE);
-        if(plans.contains(B))
+        if (plans.contains(B))
             profile_LAY_planB.setVisibility(View.VISIBLE);
         else
             profile_LAY_planB.setVisibility(View.GONE);
-        if(plans.contains(C))
+        if (plans.contains(C))
             profile_LAY_planC.setVisibility(View.VISIBLE);
         else
             profile_LAY_planC.setVisibility(View.GONE);
     }
 
     //Sign out a user
-    private void signOutCurrentUser(){
-            mAuth.signOut();
-            Intent intent = new Intent(this, Sign_Up.class);
-            startActivity(intent);
-            finish();
-    }
+    private void signOutCurrentUser() {
+        mAuth.signOut();
+//        Intent intent = new Intent(this, Sign_In.class);
+//        startActivity(intent);
+        Log.d("in Profile", "to Sign_In after logout");
+        Intent intent = new Intent(getApplicationContext(), Sign_In.class);
+        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+        startActivity(intent);
+      }
 
 
     private void findViews() {

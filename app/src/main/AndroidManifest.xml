@@ -23,10 +23,12 @@
             android:screenOrientation="portrait"></activity>
         <activity
             android:name=".Sign_Up"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"
+            />
         <activity
             android:name=".Sign_In"
-            android:screenOrientation="portrait" />
+            android:screenOrientation="portrait"
+            />
         <activity
             android:name=".Activity_Splash"
             android:screenOrientation="portrait">

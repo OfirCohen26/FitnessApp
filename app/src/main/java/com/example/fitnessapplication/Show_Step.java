@@ -179,16 +179,16 @@ public class Show_Step extends AppCompatActivity implements Variables {
     private void initStepsArray() {
         if (planSign.equals(A)) {
             steps = Arrays.copyOf(PLAN_A, PLAN_A.length);
-            secondsForExercise = 3; // 30 sec
-            secondsForRestOrAerobic = 3; // 30 sec
+            secondsForExercise = 30; // 30 sec
+            secondsForRestOrAerobic = 30; // 30 sec
         } else if (planSign.equals(B)) {
             steps = Arrays.copyOf(PLAN_B, PLAN_B.length);
-            secondsForExercise = 3; // 30 sec
-            secondsForRestOrAerobic = 3; // 60 sec
+            secondsForExercise = 30; // 30 sec
+            secondsForRestOrAerobic = 60; // 60 sec
         } else {
             steps = Arrays.copyOf(PLAN_C, PLAN_C.length);
-            secondsForExercise = 2;// 20sec
-            secondsForRestOrAerobic = 2; // 10 sec
+            secondsForExercise = 20;// 20sec
+            secondsForRestOrAerobic = 10; // 10 sec
         }
     }
 

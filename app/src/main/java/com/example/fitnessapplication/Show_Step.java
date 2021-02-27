@@ -22,7 +22,7 @@ import com.google.android.material.button.MaterialButton;
 
 import java.util.Arrays;
 
-public class Show_Step extends AppCompatActivity implements Variables {
+public class Show_Step extends Activity_Base implements Variables {
     // Layouts
     private RelativeLayout show_step_LAY_timer_for_break;
     private LinearLayout show_step_LAY_step;

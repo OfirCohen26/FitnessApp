@@ -13,7 +13,7 @@ import com.google.android.material.button.MaterialButton;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Plans extends AppCompatActivity implements Variables {
+public class Plans extends Activity_Base implements Variables {
     // Buttons
     private MaterialButton plans_BTN_planA;
     private MaterialButton plans_BTN_planB;

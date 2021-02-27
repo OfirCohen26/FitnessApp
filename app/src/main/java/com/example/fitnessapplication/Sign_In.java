@@ -23,7 +23,7 @@ import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
 
-public class Sign_In extends AppCompatActivity {
+public class Sign_In extends Activity_Base {
     // Layout
     private RelativeLayout login_LAY_loading;
 

@@ -1,4 +1,4 @@
-package com.example.fitnessapplication;
+package com.example.fitnessapplication.Utils;
 
 import android.util.Log;
 import android.widget.EditText;

@@ -1,4 +1,4 @@
-package com.example.fitnessapplication;
+package com.example.fitnessapplication.Screen;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -6,12 +6,11 @@ import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
 
-import androidx.appcompat.app.AppCompatActivity;
-
+import com.example.fitnessapplication.Auth.Profile;
+import com.example.fitnessapplication.R;
+import com.example.fitnessapplication.Utils.Activity_Base;
+import com.example.fitnessapplication.Variables;
 import com.google.android.material.button.MaterialButton;
-
-import java.util.ArrayList;
-import java.util.List;
 
 public class Plans extends Activity_Base implements Variables {
     // Buttons
@@ -71,7 +70,6 @@ public class Plans extends Activity_Base implements Variables {
     private void moveToProfileScreen() {
         Intent intent = new Intent(this, Profile.class);
         startActivity(intent);
-        Log.d("in Plans", "to profile");
     }
 
     private void findViews() {

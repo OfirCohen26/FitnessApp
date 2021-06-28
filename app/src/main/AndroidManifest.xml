@@ -12,25 +12,25 @@
         android:supportsRtl="false"
         android:theme="@style/Theme.FitnessApplication">
         <activity
-            android:name=".Finished_Plan"
+            android:name=".Screen.Finished_Plan"
             android:screenOrientation="portrait"></activity>
         <activity
-            android:name=".Show_Step"
+            android:name=".Screen.Show_Step"
             android:screenOrientation="portrait"></activity>
-        <activity android:name=".Plan_Description" />
+        <activity android:name=".Screen.Plan_Description" />
         <activity
-            android:name=".Plans"
+            android:name=".Screen.Plans"
             android:screenOrientation="portrait"></activity>
         <activity
-            android:name=".Sign_Up"
+            android:name=".Auth.Sign_Up"
             android:screenOrientation="portrait"
             />
         <activity
-            android:name=".Sign_In"
+            android:name=".Auth.Sign_In"
             android:screenOrientation="portrait"
             />
         <activity
-            android:name=".Activity_Splash"
+            android:name=".Screen.Activity_Splash"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -39,7 +39,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".Profile"
+            android:name=".Auth.Profile"
             android:screenOrientation="portrait"></activity>
     </application>
 

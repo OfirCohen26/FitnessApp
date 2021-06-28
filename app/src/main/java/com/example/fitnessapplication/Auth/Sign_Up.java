@@ -1,4 +1,4 @@
-package com.example.fitnessapplication;
+package com.example.fitnessapplication.Auth;
 
 import androidx.annotation.NonNull;
 
@@ -8,6 +8,11 @@ import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 
+import com.example.fitnessapplication.Utils.Activity_Base;
+import com.example.fitnessapplication.Screen.Plans;
+import com.example.fitnessapplication.R;
+import com.example.fitnessapplication.Object.User;
+import com.example.fitnessapplication.Utils.Validation;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.android.material.button.MaterialButton;

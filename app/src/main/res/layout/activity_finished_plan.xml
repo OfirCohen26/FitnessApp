@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#0E0E0E"
-    tools:context=".Finished_Plan">
+    tools:context=".Screen.Finished_Plan">
 
     <TextView
         android:id="@+id/finished_plan_LBL_finished_Well_done"

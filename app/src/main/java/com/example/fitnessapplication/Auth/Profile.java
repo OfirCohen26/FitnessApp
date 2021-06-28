@@ -1,4 +1,4 @@
-package com.example.fitnessapplication;
+package com.example.fitnessapplication.Auth;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -9,8 +9,13 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.fitnessapplication.Utils.Activity_Base;
+import com.example.fitnessapplication.Screen.Plan_Description;
+import com.example.fitnessapplication.Screen.Plans;
+import com.example.fitnessapplication.R;
+import com.example.fitnessapplication.Object.User;
+import com.example.fitnessapplication.Variables;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.material.button.MaterialButton;

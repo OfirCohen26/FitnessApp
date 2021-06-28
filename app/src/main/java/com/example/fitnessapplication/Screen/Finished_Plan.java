@@ -1,13 +1,13 @@
-package com.example.fitnessapplication;
-
-import androidx.appcompat.app.AppCompatActivity;
+package com.example.fitnessapplication.Screen;
 
 import android.os.Bundle;
 import android.view.View;
 
+import com.example.fitnessapplication.R;
+import com.example.fitnessapplication.Utils.Activity_Base;
 import com.google.android.material.button.MaterialButton;
 
-public class Finished_Plan extends Activity_Base{
+public class Finished_Plan extends Activity_Base {
     // Buttons
     MaterialButton finished_plan_BTN_back_to_PlanDes;
 

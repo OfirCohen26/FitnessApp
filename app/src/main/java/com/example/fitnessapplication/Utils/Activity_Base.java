@@ -1,4 +1,4 @@
-package com.example.fitnessapplication;
+package com.example.fitnessapplication.Utils;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class Activity_Base extends AppCompatActivity  {

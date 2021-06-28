@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#0E0E0E"
-    tools:context=".Plan_Description">
+    tools:context=".Screen.Plan_Description">
 
     <ImageView
         android:id="@+id/plan_description_IMG_backToPlans"
@@ -87,7 +87,7 @@
         app:icon="@drawable/right_arrow"
         app:iconGravity="textEnd"
         app:iconTint="@color/blue"
-        app:strokeColor="@color/blue" />
+        app:strokeColor="@color/blue"/>
 
 
 </RelativeLayout>

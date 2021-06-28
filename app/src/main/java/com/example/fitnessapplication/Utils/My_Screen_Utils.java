@@ -1,4 +1,4 @@
-package com.example.fitnessapplication;
+package com.example.fitnessapplication.Utils;
 import android.view.View;
 
 import android.app.Activity;

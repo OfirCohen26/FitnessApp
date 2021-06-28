@@ -1,11 +1,12 @@
-package com.example.fitnessapplication;
-
-import androidx.appcompat.app.AppCompatActivity;
+package com.example.fitnessapplication.Screen;
 
 import android.os.Bundle;
 import android.content.Intent;
 import android.os.Handler;
 
+import com.example.fitnessapplication.Auth.Sign_Up;
+import com.example.fitnessapplication.R;
+import com.example.fitnessapplication.Utils.Activity_Base;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 

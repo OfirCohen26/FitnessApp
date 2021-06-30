@@ -34,12 +34,12 @@ public class Activity_Splash extends Activity_Base {
             // No user is signed in
             mainIntent = new Intent(Activity_Splash.this, Sign_Up.class);
         }
-        /* New Handler to start the Menu-Activity
+        /* New Handler to start the Main-Activity
          * and close this Splash-Screen after some seconds.*/
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                /* Create an Intent that will start the Menu-Activity. */
+                /* Create an Intent that will start the Main-Activity. */
                 Activity_Splash.this.startActivity(mainIntent);
                 Activity_Splash.this.finish();
             }
